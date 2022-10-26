@@ -109,7 +109,7 @@ while 1:
     else :             # here the function golden_token() starts
         code, distance, angle = find_golden_token() 
     if distance==-1 or code == -1:        # if the distance or the code are -1, the robot turns to find a token
-       print("I can see any token or the token has already used!")
+       print("I can't see any token or the token has already used!")
        turn(+2, 0.5)
     elif distance < s_th and flag == True:   #condition to grab a silver token
             print("Silver token found!")
