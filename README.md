@@ -2,7 +2,7 @@
 
 ## Pseudocode
 
-'''set flag for switching between the research of silver and golden tokens to true'''
+` ` ` set flag for switching between the research of silver and golden tokens to true` ` ` 
 <p>set the threshold for the control of the orientation to 2.0</p>
 <p>set the threshold for the control of the linear distance from a silver token to 0.4</p>
 <p>set the threshold for the control of the linear distance from a golden token to 0.5</p>
