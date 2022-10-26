@@ -1,5 +1,13 @@
 # Assignment 1
 
+
+## How to install and run
+
+### Installing
+The simulator requires a Python 2.7 installation, the pygame library, PyPyBox2D, and PyYAML.
+### Running
+Run this command on your shell: ```python2 run.py assignment.py```
+
 ## Pseudocode
 
 ```set flag for switching between the research of silver and golden tokens to true
