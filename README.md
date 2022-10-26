@@ -100,7 +100,13 @@ while 1 is equal to 1
        print "Now I am aligned with the token!
        call forward with parameters 25, 0.5
     endif
-    if angle is smaller than 
+    if angle is smaller than minus threshold for the orientation 
+       print "Better turn on the left."
+       call turn with -2, 0.5 in order to turn on the left
+    endif
+    if angle is greater than threshold for the orientation 
+       print "Better turn on the right"
+       call turn with -2, 0.5 on the right"
        
        
        
