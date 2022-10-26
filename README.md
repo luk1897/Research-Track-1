@@ -97,7 +97,10 @@ while 1 is equal to 1
        set flag to not flag
     endif
     if angle is greater than minus threshold for the orientation and angle is smaller than the threshold for the orientation
-       print "Now I 
+       print "Now I am aligned with the token!
+       call forward with parameters 25, 0.5
+    endif
+    if angle is smaller than 
        
        
        
