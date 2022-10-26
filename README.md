@@ -3,17 +3,17 @@
 ## Pseudocode
 
 <p>set flag for switching between the research of silver and golden tokens to True</p>
-set the threshold for the control of the orientation to 2.0
-set the threshold for the control of the linear distance from a silver token to 0.4
-set the threshold for the control of the linear distance from a golden token to 0.5
-set R to Robot()
+<p>set the threshold for the control of the orientation to 2.0</p>
+<p>set the threshold for the control of the linear distance from a silver token to 0.4</p>
+<p>set the threshold for the control of the linear distance from a golden token to 0.5</p>
+<p>set R to Robot()</p>
 
 function forward with parameters speed and seconds
-  set power of the left motor to speed
-  set power of the right motor to speed
-  set a sleep with seconds
-  set zero the power of the left motor 
-  set zero the power of the right motor
+    set power of the left motor to speed
+    set power of the right motor to speed
+    set a sleep with seconds
+    set zero the power of the left motor 
+    set zero the power of the right motor
  
 function turn with parameters speed and seconds
   set power of the left motor to speed
