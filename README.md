@@ -189,7 +189,6 @@ while 1 is equal to 1
     if angle is greater than threshold for the orientation 
        print "Better turn on the right"
        call turn with -2, 0.5 on the right" 
-    ```
        
        
        
