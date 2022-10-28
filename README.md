@@ -86,7 +86,7 @@ for m in markers:
 
 ## Pseudocode
 
-```python
+```
 set flag for switching between the research of silver and golden tokens to true
 set the threshold for the control of the orientation to 2.0
 set the threshold for the control of the linear distance from a silver token to 0.4
@@ -192,9 +192,12 @@ while 1 is equal to 1
     if angle is greater than threshold for the orientation 
        print "Better turn on the right"
        call turn with -2, 0.5 on the right" 
+```
        
- 
- ## Possible improvements
+## Possible improvements
+
+*I preferred to keep the rotation speed lower to avoid problems with the robot's vision, but you could increase and decrease the time interval in which it turns to make the rotation as fast and effective as it is now.
+*The maximum distance within which the robot sees could be increased in order to make its vision more efficient, although, in this case, the environment would have to be enlarged to prove its effectiveness.
        
        
     
