@@ -196,8 +196,8 @@ while 1 is equal to 1
        
 ## Possible improvements
 
-*I preferred to keep the rotation speed lower to avoid problems with the robot's vision, but you could increase and decrease the time interval in which it turns to make the rotation as fast and effective as it is now.
-*The maximum distance within which the robot sees could be increased in order to make its vision more efficient, although, in this case, the environment would have to be enlarged to prove its effectiveness.
+* I preferred to keep the rotation speed lower to avoid problems with the robot's vision, but you could increase and decrease the time interval in which it turns to make the rotation as fast and effective as it is now.
+* The maximum distance within which the robot sees could be increased in order to make its vision more efficient, although, in this case, the environment would have to be enlarged to prove its effectiveness.
        
        
     
