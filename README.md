@@ -1,5 +1,7 @@
 # Assignment 1
 
+## Project Goal
+The robot must take each silver token, approach a gold token and release it next to it, but tokens must only be considered once.
 
 ## How to install and run
 
@@ -84,7 +86,8 @@ for m in markers:
 
 ## Pseudocode
 
-```set flag for switching between the research of silver and golden tokens to true
+```python
+set flag for switching between the research of silver and golden tokens to true
 set the threshold for the control of the orientation to 2.0
 set the threshold for the control of the linear distance from a silver token to 0.4
 set the threshold for the control of the linear distance from a golden token to 0.5
@@ -190,7 +193,8 @@ while 1 is equal to 1
        print "Better turn on the right"
        call turn with -2, 0.5 on the right" 
        
-       
+ 
+ ## Possible improvements
        
        
     
