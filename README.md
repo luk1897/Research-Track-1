@@ -11,7 +11,7 @@ The simulator requires a Python 2.7 installation, the [pygame](http://pygame.org
 Pygame, unfortunately, can be tricky (though [not impossible](http://askubuntu.com/q/312767)) to install in virtual environments. If you are using `pip`, you might try `pip install hg+https://bitbucket.org/pygame/pygame`, or you could use your operating system's package manager. Windows users could use [Portable Python](http://portablepython.com/). PyPyBox2D and PyYAML are more forgiving, and should install just fine using `pip` or `easy_install`.
 
 ### Running
-Run this command on your shell: ```python run.py assignment.py```
+Run this command on your shell: ```python2 run.py assignment.py```
 
 ## Troubleshooting
 
