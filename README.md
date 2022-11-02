@@ -151,6 +151,18 @@ function find golden token without parameters
        endif
   endfor
   
+function grab silver token with parameter code of the silver token
+  print "Silver token reached!"
+  the robot grabs the token
+  add the code of the silver token to the silver tokens list
+  print "Taken"
+  
+function release silver token with parameter code of the golden token
+  print "Golden token reached!"
+  the robot releases the silver token
+  add the code of the golden token to the golden tokens list
+  print "Released"
+  
 while 1 is equal to 1
     if the number of the elements in the golden tokens list is equal to 6
        set sleep to 1
@@ -168,17 +180,9 @@ while 1 is equal to 1
        call turn with parametres +2, 0.5
     endif
     if distance is less than the threshold for the silver token and flag is equal to true
-       print "Silver token found!"
-       the robot grabs the token
-       add the code of the silver token to the silver tokens list
-       print "Taken"
        set flag to not flag
     endif
     if distance is less than the threshold for the golden token and flag is equal to false
-       print "Golden token found!
-       the robot releases the silver token
-       add the code of the golden token to the golden tokens list
-       print "Released"
        set flag to not flag
     endif
     if angle is greater than minus threshold for the orientation and angle is smaller than the threshold for the orientation
