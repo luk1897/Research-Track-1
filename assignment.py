@@ -76,7 +76,7 @@ def find_silver_token():
 def find_golden_token():
     """
     
-    Function to find the closest golden token
+    Function for finding the closest golden token
 
     Returns: code of the token (int), distance of the token (int)
     and the angle between the robot and the token
@@ -101,7 +101,7 @@ def find_golden_token():
 def grab_silver_token(code):
     """
     
-    Function to grab the closest silver token and add the silver token code to the silver token list
+    Function for grabbing the closest silver token and add the silver token code to the silver token list
     
     Parameters: code of the token(int)
 
@@ -117,7 +117,7 @@ def grab_silver_token(code):
 def release_silver_token(code):
     """
     
-    Function to grab the closest silver token and add the silver token code to the silver token list
+    Function for releasing the closest silver token and add the golden token code to the golden token list
     
     Parameters: code of the token(int)
 
