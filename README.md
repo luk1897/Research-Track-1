@@ -165,6 +165,8 @@ function release silver token with parameter code of the golden token
   
 while 1 is equal to 1
     if the number of the elements in the golden tokens list is equal to 6
+       call turn with parametres +15, 3
+       call forward with parameters 25, 3
        set sleep to 1
        print "My job is done"
        exit from the program
@@ -177,7 +179,7 @@ while 1 is equal to 1
     endelse
     if distance is equal to -1 or code is equal to -1
        print "I can't see any token or the token has already used!"
-       call turn with parametres +2, 0.5
+       call turn with parametres +10, 0.1
     endif
     if distance is less than the threshold for the silver token and flag is equal to true
        call grab silver token with parameter code of the silver token
@@ -193,16 +195,14 @@ while 1 is equal to 1
     endif
     if angle is smaller than minus threshold for the orientation 
        print "Better turn on the left."
-       call turn with -2, 0.5 in order to turn on the left
+       call turn with -10, 0.1 in order to turn on the left
     endif
     if angle is greater than threshold for the orientation 
        print "Better turn on the right"
-       call turn with -2, 0.5 on the right" 
+       call turn with +10, 0.1 on the right" 
 ```
        
 ## Possible improvements
-
-* I preferred to keep the rotation speed lower to avoid problems with the robot's vision, but you could increase and decrease the time interval in which it turns to make the rotation as fast and effective as it is now.
 * The maximum distance within which the robot sees could be increased in order to make its vision more efficient, although, in this case, the environment would have to be enlarged to prove its effectiveness.
        
        
