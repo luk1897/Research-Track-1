@@ -145,8 +145,10 @@ while 1:
        print("I can't see any token or the token has already used!")
        turn(+2, 0.5)
     elif distance < s_th and flag == True:   #condition to grab a silver token
+	    grab_silver_token(code)
             flag=not flag              # thanks to it we can switch to the function which looks for golden tokens
     elif distance < g_th and flag == False:   #condition to release a silver token
+	    release_silver_token(code)
             flag=not flag               # thanks to it we can switch to the function which looks for silver tokens
     elif -a_th<= angle <= a_th: # the robot go forward if it is aligned with the token
        print("Now I am aligned with the token!")
