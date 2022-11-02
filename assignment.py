@@ -99,7 +99,15 @@ def find_golden_token():
     return code, distance, angle
 
 def grab_silver_token(code):
+    """
+    
+    Function to grab the closest silver token and add the silver token code to the silver token list
+    
+    Parameters: code of the token(int)
 
+    Returns: any returns
+    
+    """
     print("Silver token reached!")
     R.grab() 
     s_code_list.append(code) # after the silver token is grabbed, the silver token code is added to the list
@@ -107,7 +115,15 @@ def grab_silver_token(code):
 
 
 def release_silver_token(code):
+    """
+    
+    Function to grab the closest silver token and add the silver token code to the silver token list
+    
+    Parameters: code of the token(int)
 
+    Returns: any returns
+    
+    """
     print("Golden token reached!")
     R.release()
     g_code_list.append(code) # after the silver token is released, the golden token code is added to the list
