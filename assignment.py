@@ -98,9 +98,26 @@ def find_golden_token():
 	        return -1, -1, -1
     return code, distance, angle
 
+def grab_silver_token(code):
+
+    print("Silver token reached!")
+    R.grab() 
+    s_code_list.append(code) # after the silver token is grabbed, the silver token code is added to the list
+    print("Taken!")
+
+
+def release_silver_token(code):
+
+    print("Golden token reached!")
+    R.release()
+    g_code_list.append(code) # after the silver token is released, the golden token code is added to the list
+    print("Released!")  
+
 
 while 1:
     if len(g_code_list)==6:  # checking if the job is done because when the list has six code, the task is completed
+       turn(+2, 2)
+       forward(10,1)
        time.sleep(1)
        print("My job is done")
        exit(0)      
@@ -112,16 +129,8 @@ while 1:
        print("I can't see any token or the token has already used!")
        turn(+2, 0.5)
     elif distance < s_th and flag == True:   #condition to grab a silver token
-            print("Silver token found!")
-            R.grab() 
-            s_code_list.append(code)   # after the silver token is grabbed, the silver token code is added to the list
-            print("Taken!")
             flag=not flag              # thanks to it we can switch to the function which looks for golden tokens
     elif distance < g_th and flag == False:   #condition to release a silver token
-            print("Golden token found!")
-            R.release()
-            g_code_list.append(code)      # after the silver token is released, the golden token code is added to the list
-            print("Released!")  
             flag=not flag               # thanks to it we can switch to the function which looks for silver tokens
     elif -a_th<= angle <= a_th: # the robot go forward if it is aligned with the token
        print("Now I am aligned with the token!")
