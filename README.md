@@ -180,9 +180,11 @@ while 1 is equal to 1
        call turn with parametres +2, 0.5
     endif
     if distance is less than the threshold for the silver token and flag is equal to true
+       call grab silver token with parameter code of the silver token
        set flag to not flag
     endif
     if distance is less than the threshold for the golden token and flag is equal to false
+       call release silver token with parameter code of the golden token
        set flag to not flag
     endif
     if angle is greater than minus threshold for the orientation and angle is smaller than the threshold for the orientation
