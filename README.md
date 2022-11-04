@@ -274,9 +274,13 @@ while 1 is equal to 1
        print "Better turn on the right"
        call turn with +10, 0.1 on the right" 
 ```
-       
+
+## Output   
+  ![output_assignment1_rstrack1](https://user-images.githubusercontent.com/80416766/199982984-02839a13-a6ac-4049-b16c-48246ef6afd0.png)
+
 ## Possible improvements
 * The maximum distance within which the robot sees could be increased in order to make its vision more efficient, although, in this case, the environment would have to be enlarged to prove its effectiveness.
+* Another possible improvement would be to allow the robot to find the nearest token because, at present, the robot rotates to one side when looking for a token and does not always see the one closest to it.
        
        
     
