@@ -83,6 +83,70 @@ for m in markers:
     elif m.info.marker_type == MARKER_ARENA:
         print " - Arena marker {0} is {1} metres away".format( m.info.offset, m.dist )
 ```
+## Functions
+
+``` python
+def forward(speed, seconds):
+    R.motors[0].m0.power = speed
+    R.motors[0].m1.power = speed
+    time.sleep(seconds)
+    R.motors[0].m0.power = 0
+    R.motors[0].m1.power = 0
+```
+
+``` python
+def turn(speed, seconds):
+    R.motors[0].m0.power = speed
+    R.motors[0].m1.power = -speed
+    time.sleep(seconds)
+    R.motors[0].m0.power = 0
+    R.motors[0].m1.power = 0 
+```
+
+``` python
+def find_silver_token():
+    distance=100
+    for token in R.see():   
+        if token.dist < distance and token.info.marker_type is MARKER_TOKEN_SILVER:     
+            code=token.info.code
+            distance=token.dist
+	    angle=token.rot_y
+    if distance==100:
+         return -1,-1,-1
+    for x in s_code_list:  
+            if x==code:
+	        return -1, -1, -1
+    return code, distance, angle
+```
+``` python	
+def find_golden_token():
+    distance=100
+    for token in R.see():  
+        if token.dist < distance and token.info.marker_type is MARKER_TOKEN_GOLD:  
+            code=token.info.code
+            distance=token.dist
+	    angle=token.rot_y
+    if distance==100:
+         return -1,-1,-1
+    for x in g_code_list: 
+            if x==code:
+	        return -1, -1, -1
+    return code, distance, angle
+```
+``` python
+def grab_silver_token(code):
+    print("Silver token reached!")
+    R.grab() 
+    s_code_list.append(code)
+    print("Taken!")
+```
+``` python
+def release_silver_token(code):
+    print("Golden token reached!")
+    R.release()
+    g_code_list.append(code)
+    print("Released!")  
+```
 
 ## Pseudocode
 
