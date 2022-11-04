@@ -93,6 +93,7 @@ def forward(speed, seconds):
     R.motors[0].m0.power = 0
     R.motors[0].m1.power = 0
 ```
+This function allows the robot to move forward.
 
 ``` python
 def turn(speed, seconds):
@@ -102,6 +103,7 @@ def turn(speed, seconds):
     R.motors[0].m0.power = 0
     R.motors[0].m1.power = 0 
 ```
+This function allows the robot to rotate.
 
 ``` python
 def find_silver_token():
@@ -118,6 +120,8 @@ def find_silver_token():
 	        return -1, -1, -1
     return code, distance, angle
 ```
+
+
 ``` python	
 def find_golden_token():
     distance=100
