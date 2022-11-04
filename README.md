@@ -120,7 +120,7 @@ def find_silver_token():
 	        return -1, -1, -1
     return code, distance, angle
 ```
-
+This function allows the robot to find a silver token which has not found by the robot yet.
 
 ``` python	
 def find_golden_token():
@@ -137,6 +137,8 @@ def find_golden_token():
 	        return -1, -1, -1
     return code, distance, angle
 ```
+This function allows the robot to find a golden token which has not found by the robot yet.
+
 ``` python
 def grab_silver_token(code):
     print("Silver token reached!")
@@ -144,6 +146,8 @@ def grab_silver_token(code):
     s_code_list.append(code)
     print("Taken!")
 ```
+This function allows the robot to grab a silver token.
+
 ``` python
 def release_silver_token(code):
     print("Golden token reached!")
@@ -151,6 +155,7 @@ def release_silver_token(code):
     g_code_list.append(code)
     print("Released!")  
 ```
+This function allows the robot to release a silver token.
 
 ## Pseudocode
 
